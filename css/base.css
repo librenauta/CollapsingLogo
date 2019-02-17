@@ -10,14 +10,17 @@ body {
 	--color-text: #000;
 	--color-bg: #fff;
 	--color-link: #000;
-	--color-link-hover: #000;
-	--color-logo-bg: #a09f92;
+	--color-link-hover: #fff;
+	--color-logo-bg: #e0ca00;
 	font-family: 'Inconsolata', monospace;
 	height: 100vh;
 	color: var(--color-text);
 	background-color: var(--color-bg);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+/* 	background-image: url("https://66.media.tumblr.com/2c54bf204e7fdedd67f4c439f9e834d3/tumblr_n2af5h9iKz1scaz74o1_500.gif");*/
+	background-image: url("https://assets2.ello.co/uploads/asset/attachment/8455651/ello-xhdpi-c2e75c0b.jpg");
+	background-size:auto;
 }
 
 .js .loading::before {
@@ -192,6 +195,7 @@ main {
 	display: inline-block;
 	cursor: pointer;
 	color: #980a0a;
+	font-size: 2.85rem;
 }
 
 .intro__enter:hover {
@@ -202,7 +206,7 @@ main {
 	display: none;
 }
 
-.intro__github {
+.intro__copiona {
 	text-transform: lowercase;
 	position: relative;
 	font-size: 0.85rem;
@@ -278,7 +282,7 @@ main {
 }
 
 .menu__item--current {
-	color: #000;
+	color: #e0ca00;
 }
 
 .slideshow {
@@ -358,7 +362,7 @@ main {
 
 .slideshow__item-img-inner {
 	background-size: cover;
-	background-position: 50% 50%;
+	background-position: 80% 50%;
 	width: 100%;
 	height: 100%;
 }
@@ -450,7 +454,7 @@ main {
 		text-align: right;
 	}
 	.intro__content--second {
-		grid-area: 1 / 2 / 1 / 3;
+		grid-area: 2 / 2 / 1 / 3;
 		display: block;
 	}
 	.intro__content--forth {
@@ -472,7 +476,7 @@ main {
 	.intro__enter {
 		margin: auto 0 0 0;
 	}
-	.intro__github {
+	.intro__copiona {
 		font-size: 1rem;
 		align-self: end;
 		justify-self: start;

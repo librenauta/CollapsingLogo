@@ -4,7 +4,7 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2018, Codrops
  * http://www.codrops.com
  */
@@ -32,7 +32,7 @@
 		slideshowImagesWrappers: document.querySelectorAll('.slideshow__item-img'),
 		slideshowImages: document.querySelectorAll('.slideshow__item-img-inner')
 	};
-	
+
 	class Panel {
 		constructor(el) {
 			this.DOM = {el: el};
@@ -40,9 +40,9 @@
 			this.DOM.logo = DOM.intro.querySelector('.intro__logo');
 			this.DOM.logoImg = this.DOM.logo.querySelector('.icon--arrowup');
 			this.DOM.enter = DOM.intro.querySelector('.intro__enter');
-			
+
 			this.animatableElems = Array.from(DOM.intro.querySelectorAll('.animatable')).sort(() => 0.5 - Math.random());
-			
+
 			// set layout
 			this.boxRect = this.DOM.el.getBoundingClientRect();
 			this.layout();
@@ -59,7 +59,7 @@
 				ev.preventDefault();
 				this.close();
 			});
-		
+
 			this.DOM.logo.addEventListener('click', (ev) => {
 				ev.preventDefault();
 				this.open();
@@ -91,7 +91,7 @@
 			anime({
 				targets: this.animatableElems,
 				duration: 1200,
-				delay: (t,i) => 350 + i*30,
+				delay: (t,i) => 650 + i*30,
 				easing: 'easeOutExpo',
 				translateX: '0%',
 				opacity: {
